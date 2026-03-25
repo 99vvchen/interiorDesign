@@ -1,0 +1,812 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+/* 全域 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+:root {
+  font-size: 16px;
+}
+button {
+  border: none;
+}
+i {
+  color: #cda274;
+}
+body {
+background: url(../images/Slice\ 1.jpg) repeat-y;
+background-size: 100%;
+}
+section{
+  margin: 30px 0;
+}
+/* 手機header */
+header{
+  padding: 30px 30px;
+  width: 100%;
+  max-height: 60px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  }
+header .nav{
+  display: none;
+}
+/* 手機banner */
+.banner {
+  background: url("../images/phone/Banner.png") no-repeat;
+  background-size: 100%;
+  background-position: bottom center;
+  max-width: 100%;
+  height:400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 80px;
+  padding: 0 30px;
+  margin: 0;
+  margin-bottom: 30px;
+   background-position: center bottom;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 30px;
+  padding: 10px 10px;
+  margin: auto;
+ display: flex;
+ flex-direction: column;
+}
+.hero-info {
+  width: 90%;
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: normal;
+  font-family: "DM Serif Display";
+}
+p.desc {
+  width: 96%;
+  font-family: "Jost";
+  margin: 10px 0;
+}
+button.get {
+  background-color: #292f36;
+  color: white;
+  padding: 16px 38px;
+  border-radius: 18px;
+}
+button.get > i {
+  margin-left: 10px;
+}
+/* 手機work */
+
+section.work{
+  margin: 100px 0;
+}
+.work .container{
+  width: 70%;
+  text-align: center;
+  gap: 42px;
+}
+.card1{
+  margin: 0;
+  padding: 0;
+}
+.card1 .card-title{
+  font-family: "DM Serif Display";
+}
+.card1 button.get{
+  background-color: transparent;
+  color: #4D5053;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 0;
+}
+
+/* 手機about */
+.intro-text{
+  padding: 20px;
+  text-align: center;
+}
+h2.section-title{
+  font-size:2.2rem;
+  text-align: center;
+  
+}
+.contact-group{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  
+}
+.intro-text>.desc{
+  text-align: left;
+}
+.circle-icon{
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #F4F0EC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.circle-icon i{
+  font-size: 1.8rem;
+}
+.contact-info{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.contact-info .phone{
+font-family: "Jost";
+ font-weight: bold;
+}
+.intro-img{
+  width: 100%;
+   order: -1;
+  
+}
+.intro-img img{
+width: 100%;
+border-bottom-left-radius: 100px;
+border-top-right-radius: 150px;
+}
+
+/* 手機brand */
+section.brand{
+  margin: 100px 0;
+}
+.brand-list{
+  display:flex ;
+  gap: 20px;
+  overflow-x: auto; /* 手機版可橫向滑動 */
+  -webkit-overflow-scrolling: touch; 
+  /* 提升手機滑動順暢度 */
+}
+.brand-list::-webkit-scrollbar {
+    display: none; /* 隱藏捲軸樣式 */
+}
+.brand-list .brand-img{
+  width: 150px;
+  height: 80px;
+}
+/* 手機Testimonials */
+.Testimonials{
+  padding: 50px 20px;
+}
+.Testimonials .container{
+ padding: 50px 20px;
+  background-color: #f4f0ec;
+
+}
+.Testimonial-list{
+  padding: 50px 0;
+  display: flex;
+  flex-direction:column;
+gap: 20px;
+}
+.Testimonial-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Testimonials .card1{
+  flex: 1;
+  padding: 10px 10px;
+  background-color: #fff;
+  border-radius: 30px;
+}
+.Testimonial-avater{
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+}
+.Testimonial-avater img{
+  border-radius: 50%;
+}
+.Testimonial-name{
+font-family: "Jost";
+ font-weight: bold;
+ color: #7b7b7b;
+ padding: 10px 0;
+
+}
+.Testimonial-location{
+  font-family: "Jost";
+   color: #b0b0b0;
+
+}
+
+.Testimonial-info p.desc{
+  margin-top: 20px;
+  text-align: center;
+  color: #7b7b7b;
+}
+
+/* 手機project */
+.project .container{
+padding: 50px 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.project-list{
+  width: 100%;
+}
+.project .card1{
+  margin: 20px 0;
+}
+.project-title{
+width: 80%;
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.project-title p.desc{
+  text-align: center;
+}
+.card1 img{
+  width: 100%;
+}
+.project-img1{
+border-top-right-radius: 30px;
+}
+.project-img2{
+border-top-left-radius: 30px;
+}
+.project-img3{
+border-bottom-right-radius: 30px;
+}
+.project-img4{
+border-bottom-left-radius: 30px;
+}
+.project-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+.project-info .card-title{
+font-family: "Jost";
+ font-weight: bold;
+ color: #7b7b7b;
+}
+
+.project-text p.desc{
+  font-size: 0.8rem;
+  margin: 0;
+
+}
+.project-button{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 手機stats */
+.stats {
+  width: 100%;
+  height: 300px;
+  background-color:#f4f0ec;
+  display: flex;
+  padding: 0 50px;
+ 
+}
+.stats .container{
+  display: flex;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+}
+.stats .container .card1{
+  padding: 0;
+  margin: 0;
+}
+.stats-list{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+.stats-list .card1{
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.stats-num{
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: "DM Serif Display";
+  color: #cda274;
+}
+.stats-list p.desc{
+  font-size: 0.8rem;
+ width: 100%;
+ text-align: center;
+}
+/* 手機news */
+.news{
+  padding:50px 10px;
+}
+.news .news-title p.desc{
+  color: #7b7b7b;
+}
+.news .card1{
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  padding:20px 20px;
+  position: relative;
+}
+.news .card1:nth-child(2){
+  background-color: #F4F0EC;
+}
+.news .card1 img{
+  height: 200px;
+  border-radius: 30px;
+  
+}
+.news .card-title{
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 100%;
+font-family: "DM Serif Display";
+ color: #7b7b7b;
+ letter-spacing: 0.8px;
+}
+.news-title p.desc{
+  margin:20px auto;
+  text-align: center;
+}
+.news-lebel{
+  width: 150px;
+  height: 30px;
+  background-color: #ffffff;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(91, 90, 90);
+  padding: 20px 5px;
+  position: absolute;
+  top:165px ;
+  left:30px;
+  font-family: "JOST";
+  
+}
+.news-list{
+  display: flex;
+  flex-direction: column;
+  gap:20px
+}
+.news .card-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.news .card-info .project-button{
+  flex-shrink: 0;
+}
+.news .card-info p.desc{
+color: rgb(91, 90, 90);
+}
+/* 手機CTA */
+.CTA{
+margin: 20px;
+}
+.CTA .container{
+  background-color: #000000;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+.CTA-list{
+   display: flex;
+   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.CTA h2.section-title{
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "DM Serif Display";
+}
+.CTA p.desc{
+  color: #fff;
+  text-align: center;
+  margin: 10px 0;
+  font-family: "JOST";
+  font-size: 1.1rem;
+}
+.CTA button.get{
+  background-color: #cda274;
+  color: #fff;
+   font-family: "JOST";
+   font-size: 1.1rem;
+   padding: 10px 10px;
+   border-radius: 10px;
+   /* margin: 40px 0; */
+}
+.CTA button.get i{
+  color: #5d5d5d;
+}
+/* 手機footer */
+ol{
+  list-style: none;
+  
+}
+.footer-logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.footer-logo p.desc{
+  font-family: "JOST";
+  text-align: center;
+  font-size: 1.2rem;
+   color: #5d5d5d;
+}
+.footer-logo .social-media{
+  display: flex;
+  font-size: 2rem;
+  gap: 20px;
+}
+.footer-logo .social-media i{
+  color: #6a6a6a;
+}
+.footer-list{
+  display: flex;
+  border-bottom: 0.5px solid #a4a4a4;
+  
+}
+.footer-list .card1:nth-child(1),
+.footer-list .card1:nth-child(2){
+    display: none;
+}
+.footer-list .card1:nth-child(3){
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 10px;
+  
+}
+.footer-list .card1:nth-child(3) .card-title{
+  font-family: "JOST";
+  font-size: 1.3rem;
+  font-weight: bold;
+  color:#4D5053;
+}
+.footer-list .card1:nth-child(3) li{
+  font-family: "JOST";
+  color:#5d5d5d;
+  text-align: center;
+}
+footer p.desc{
+  color:#5d5d5d; 
+  text-align: center;
+  padding: 10px;
+}
+/* 平板 */
+@media screen and (min-width: 768px) {
+  /* 平板header */
+  .menu-icon{
+    display: none;
+  }
+  header .nav{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+  }
+
+  .nav .nav-link{
+  width: 40px;
+  height: 60px;
+  }
+  .nav .nav-link a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-link a i{
+  color:#333;
+}
+  .nav .nav-link a:hover{
+    color: #cda274 ;
+  }
+  .nav .nav-link a i:hover{
+      color: #cda274 ;
+  }
+
+
+  /* 平板banner */
+  .banner {
+    background: url("../images/tablet/Banner.jpg") no-repeat;
+    background-size: 100%;
+    border-bottom-left-radius: 150px;
+  }
+  .container {
+    background-color: transparent;
+    width: 80%;
+    max-width: 1200px;
+  }
+  .hero-info {
+    width: 50%;
+  }
+  /* 平板work */
+.work .container{
+  flex-direction: row;
+  max-width: 1200px;
+  gap:10px
+  
+}
+  /* 平板about */
+  .about .container {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+  }
+  .intro-text{
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+  }
+  .intro-text h2.section-title{
+    text-align: left;
+    font-size: 1.8rem;
+  }
+  .contact-group{
+    display: flex;
+    justify-content: flex-start;
+  }
+  .intro-img{
+  max-width: 55%;
+  height: 100%;
+  height: auto;
+   order: 1;
+}
+.intro-img .img{
+  width: 100%;
+}
+/* 平板brand */
+.brand-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* 平板Testimonials */
+.Testimonials .container{
+  margin: auto;
+
+}
+.Testimonial-list{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+/* 平板project */
+.project-title{
+  width: 100%;
+}
+.project .project-list {
+  width: 100%;
+   display: flex;
+   flex-direction: row;
+     gap: 20px;   
+       flex-wrap: wrap;
+}
+ .project .card1 {
+    flex: 0 0 48%;
+  }
+.project .card1:nth-child(1){
+  order: 2;
+} 
+.project .card1:nth-child(2){
+  order: 1;
+} 
+.project .card1:nth-child(3){
+  order: 4;
+} 
+.project .card1:nth-child(4){
+  order: 3;
+} 
+/* 平板stats */
+
+.stats-list{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 100px;
+  
+}
+.stats-list .card1{
+  width: 100%;
+display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.stats-list .card1 p.desc{
+
+ /* white-space: nowrap; */
+  text-align: center;
+ 
+
+}
+/*平板news */
+.news-list{
+  flex-direction: row;
+}
+/* 平板footer */
+.footer-list .card1:nth-child(1),
+  .footer-list .card1:nth-child(2){
+    display: flex;
+  }
+  footer .container {
+    max-width: 1200px;
+    margin: 60px auto 20px;
+  }
+
+  .footer-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 40px;
+  }
+
+  
+  .footer-logo {
+    width: 30%;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .footer-logo p.desc {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .footer-logo .social-media {
+    font-size: 1.6rem;
+  }
+
+  /* 右側三欄 */
+  .footer-list {
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    border-bottom: none;
+  }
+
+  .footer-list .card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-list .card1 .card-title {
+    font-family: "DM Serif Display";
+    font-size: 1.3rem;
+    color: #292f36;
+  }
+
+  .footer-list .card1 li {
+    font-family: "JOST";
+    font-size: 1rem;
+    color: #5d5d5d;
+    line-height: 1.8;
+  }
+.footer-list .card1:nth-child(3){
+   display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+.footer-list .card1:nth-child(3) .card-title{
+  font-weight: normal;
+  font-family: "DM Serif Display";
+    font-size: 23.4px;
+    color: #292f36;
+}
+.footer-list .card1:nth-child(3) li{
+  
+    font-family: "JOST";
+    font-size: 1rem;
+    color: #5d5d5d;
+    line-height: 1.8;
+    text-align: left;}
+  /* Copyright */
+  footer p.desc {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #7b7b7b;
+    text-align: center;
+  }
+
+
+  
+
+}
+ 
+
+/* 電腦 */
+@media screen and (min-width: 1025px) {
+  /* 電腦header */
+
+  /* 電腦banner */
+  .banner {
+    background: url("../images/Banner.jpg") no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 800px;
+    background-position: bottom center;
+    border-bottom-left-radius: 360px;
+  margin: 0;
+  }
+  :root {
+  font-size: 18px;
+}
+.container {
+  max-width: 1200px;
+    background-color: transparent;
+  }
+  .hero-info {
+    width: 45%;
+  }
+  /* 電腦work */
+  section .work{
+    margin: 30px 0;
+  }
+}
